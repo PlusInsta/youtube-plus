@@ -34,3 +34,19 @@ html {
 ytd-video-masthead-ad-renderer {
     display: none;
 }
+
+/*Roundness*/
+#thumbnail, yt-img-shadow, paper-button, #container.ytd-searchbox {
+    border-radius: var(--roundness) !important;
+}
+
+/*Search bar*/
+#search-icon-legacy.ytd-searchbox {
+    border-radius: var(--roundness) !important;
+    border: none;
+    margin-left: 10px;
+}
+
+ytd-searchbox[mode=legacy] #container.ytd-searchbox, ytd-searchbox[mode=legacy-centered] #container.ytd-searchbox {
+    border: none !important;
+}
