@@ -1,8 +1,22 @@
+/*Background*/
 ytd-app {
 	background: url(https://i.imgur.com/3AiL3yN.png);
   background-size: cover !important;
   background-attachment: fixed !important;
 }
+
+@import url(https://fonts.googleapis.com/css?family=Product+Sans:300,400,500,600,700);
+
+/*Theme variables*/
+:root {
+	--roundness: 10px;
+	--font: 'Product Sans';
+}
+html {
+	font-family: var(--font) !important;
+}
+
+/*YouTube's Variables*/
 :root {
 	--yt-app-background: transparent !important;
 	--yt-main-app-background: transparent !important;
@@ -15,6 +29,8 @@ ytd-app {
 #masthead {
     --yt-swatch-primary: transparent !important;
 }
+
+/*Remove ad space*/
 ytd-video-masthead-ad-renderer {
     display: none;
 }
