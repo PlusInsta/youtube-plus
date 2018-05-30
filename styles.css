@@ -5,17 +5,26 @@ ytd-app {
   background-attachment: fixed !important;
 }
 
+/*Font*/
+html {
+	font-family: var(--font) !important;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Product+Sans:300,400,500,600,700);
 
 /*Theme variables*/
 :root {
 	--roundness: 10px;
 	--font: 'Product Sans';
+	--transparency: rgba(0,0,0,0.6);
+	--transparency-dark: rgba(0,0,0,0.7);
+	--transparency-darker: rgba(0,0,0,0.8);
+	--transparency-darkest: rgba(0,0,0,0.9);
+	--transparency-lite: rgba(255,255,255,0.6);
+	--transparency-light: rgba(255,255,255,0.7);
+	--transparency-lighter: rgba(255,255,255,0.8);
+	--transparency-lightest: rgba(255,255,255,0.9);
 }
-html {
-	font-family: var(--font) !important;
-}
-
 /*YouTube's Variables*/
 :root {
 	--yt-app-background: transparent !important;
@@ -26,8 +35,17 @@ html {
 	--yt-searchbox-background: transparent;
 	--yt-channel-header-background: transparent;
 }
+
 #masthead {
     --yt-swatch-primary: transparent !important;
+}
+
+/*Homepage*/
+ytd-two-column-browse-results-renderer.ytd-browse {
+    background: var(--transparency);
+    border-radius: var(--roundness);
+    padding: 20px;
+    padding-top: 0px;
 }
 
 /*Remove ad space*/
