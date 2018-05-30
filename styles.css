@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Product+Sans:300,400,500,600,700);
 /*Background*/
 ytd-app {
-	background: url(https://i.imgur.com/3AiL3yN.png);
+	background: var(--background);
 	background-size: cover !important;
 	background-attachment: fixed !important;
 }
@@ -22,8 +22,9 @@ iframe { border-radius: var(--roundness); }
 
 /*Theme variables*/
 :root {
-    --roundness: 10px;
 	--font: 'Product Sans';
+  --background: url(https://i.imgur.com/3AiL3yN.png);
+  --roundness: 10px;
 	--transparency: rgba(0,0,0,0.6);
 	--transparency-dark: rgba(0,0,0,0.7);
 	--transparency-darker: rgba(0,0,0,0.8);
@@ -82,3 +83,7 @@ ytd-two-column-browse-results-renderer.ytd-browse {
 ytd-multi-page-menu-renderer {
 	border-radius: var(--roundness) !important;
 }
+
+
+/*YouTube Legacy / Material Design*/
+body { background: var(--background); }
