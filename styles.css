@@ -1,8 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Product+Sans:300,400,500,600,700);
 /*Background*/
 ytd-app {
 	background: url(https://i.imgur.com/3AiL3yN.png);
-  background-size: cover !important;
-  background-attachment: fixed !important;
+	background-size: cover !important;
+	background-attachment: fixed !important;
 }
 
 /*Font*/
@@ -10,11 +11,18 @@ html {
 	font-family: var(--font) !important;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Product+Sans:300,400,500,600,700);
+/*iframes*/
+iframe { border-radius: var(--roundness); }
+#ad-iframe {
+    padding: 20px;
+    border-radius: var(--roundness);
+    background-color: var(--transparency);
+    margin-bottom: 20px;
+}
 
 /*Theme variables*/
 :root {
-	--roundness: 10px;
+    --roundness: 10px;
 	--font: 'Product Sans';
 	--transparency: rgba(0,0,0,0.6);
 	--transparency-dark: rgba(0,0,0,0.7);
@@ -55,18 +63,13 @@ ytd-two-column-browse-results-renderer.ytd-browse {
     background: var(--transparency);
     border-radius: var(--roundness);
     padding: 20px;
-    padding-top: 0px;
+    padding-top: 0;
 }
-/*Ads*/
-.ytvmh-embed-0 {
-    background-color: transparent !important;
-}
-#ad-iframe {
-    padding: 20px;
-    border-radius: var(--roundness);
-}
-iframe { border-radius: var(--roundness); }
-/*Roundness*/
 #thumbnail, yt-img-shadow, paper-button, #container.ytd-searchbox {
+    border-radius: var(--roundness) !important;
+}
+
+/*Videos*/
+#player, #player-container {
     border-radius: var(--roundness) !important;
 }
