@@ -1,5 +1,7 @@
 ytd-app {
-	background: url(https://i.imgur.com/3AiL3yN.png)
+	background: url(https://i.imgur.com/3AiL3yN.png);
+  background-size: cover !important;
+  background-attachment: fixed !important;
 }
 :root {
 	--yt-app-background: transparent !important;
