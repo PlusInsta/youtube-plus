@@ -48,6 +48,10 @@ iframe { border-radius: var(--roundness); }
 #masthead {
     --yt-swatch-primary: transparent !important;
 }
+#country-code.ytd-topbar-logo-renderer {
+	display: none;
+}
+
 /*Search bar*/
 #search-icon-legacy.ytd-searchbox {
     border-radius: var(--roundness) !important;
