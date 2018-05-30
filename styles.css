@@ -73,3 +73,8 @@ ytd-two-column-browse-results-renderer.ytd-browse {
 #player, #player-container {
     border-radius: var(--roundness) !important;
 }
+
+/*Menus*/
+ytd-multi-page-menu-renderer {
+	border-radius: var(--roundness) !important;
+}
