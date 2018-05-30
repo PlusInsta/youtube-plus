@@ -1,0 +1,18 @@
+ytd-app {
+	background: url(https://i.imgur.com/3AiL3yN.png)
+}
+:root {
+	--yt-app-background: transparent !important;
+	--yt-main-app-background: transparent !important;
+	--yt-guide-background: transparent !important;
+	--yt-sidebar-background: transparent !important;
+	--yt-dialog-background: transparent;
+	--yt-searchbox-background: transparent;
+	--yt-channel-header-background: transparent;
+}
+#masthead {
+    --yt-swatch-primary: transparent !important;
+}
+ytd-video-masthead-ad-renderer {
+    display: none;
+}
