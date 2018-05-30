@@ -1,13 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Product+Sans:300,400,500,600,700);
 /*Background*/
 ytd-app {
-	background: var(--background);
+	background: var(--background) !important;
 	background-size: cover !important;
 	background-attachment: fixed !important;
 }
-
 /*Font*/
-html {
+html, textarea, #placeholder {
 	font-family: var(--font) !important;
 }
 
@@ -23,8 +22,8 @@ iframe { border-radius: var(--roundness); }
 /*Theme variables*/
 :root {
 	--font: 'Product Sans';
-  --background: url(https://i.imgur.com/3AiL3yN.png);
-  --roundness: 10px;
+	--background: url(https://i.imgur.com/3AiL3yN.png);
+	--roundness: 10px;
 	--transparency: rgba(0,0,0,0.6);
 	--transparency-dark: rgba(0,0,0,0.7);
 	--transparency-darker: rgba(0,0,0,0.8);
@@ -38,6 +37,7 @@ iframe { border-radius: var(--roundness); }
 :root {
 	--yt-app-background: transparent !important;
 	--yt-main-app-background: transparent !important;
+    --yt-main-app-background-tmp: transparent !important;
 	--yt-guide-background: transparent !important;
 	--yt-sidebar-background: transparent !important;
 	--yt-dialog-background: transparent;
@@ -63,6 +63,13 @@ ytd-searchbox[mode=legacy] #container.ytd-searchbox, ytd-searchbox[mode=legacy-c
     border: none !important;
 }
 
+/*Sidebar menu*/
+#sections, #footer {
+    margin-right: 10px;
+    background-color: var(--transparency);
+    border-radius: var(--roundness);
+}
+
 /*Homepage*/
 ytd-two-column-browse-results-renderer.ytd-browse {
     background: var(--transparency);
@@ -75,8 +82,51 @@ ytd-two-column-browse-results-renderer.ytd-browse {
 }
 
 /*Videos*/
-#player, #player-container {
+.html5-video-player:not(.ytp-transparent), .html5-video-player.unstarted-mode, .html5-video-player.ad-interrupting, .html5-video-player.ended-mode, .html5-video-player.ytp-fullscreen {
+    background: transparent;
+}
+#player, #player-container, .html5-video-container, .html5-main-video, .ytp-chrome-controls, #cancel-button.ytd-commentbox, #submit-button.ytd-commentbox {
     border-radius: var(--roundness) !important;
+}
+#player { margin-bottom: 10px; }
+.ytp-gradient-bottom { display: none }
+ytd-video-primary-info-renderer,
+ytd-video-secondary-info-renderer,
+#placeholder-area.ytd-comment-simplebox-renderer {
+    border-bottom: none;
+}
+#info-contents {
+    background-color: var(--transparency);
+    border-radius: var(--roundness) var(--roundness) 0 0;
+    padding: 10px;
+    padding-top: 0;
+}
+#meta-contents {
+    border-radius: 0 0 var(--roundness) var(--roundness);
+    background-color: var(--transparency);
+    padding: 10px;
+    padding-top: 0;
+}
+#info, #comments { margin-top: 10px !important; }
+#related { margin-top: -10px !important; }
+ytd-watch {
+    background: var(--yt-main-app-background-tmp);
+}
+/*Comments*/
+.ytd-comments {
+    background-color: var(--transparency) !important;
+    padding: 2px 10px;
+    margin-right: 0 !important;
+}
+.ytd-comments #header { margin-top: -10px; }
+/*Related videos*/
+#chat.ytd-watch, #playlist.ytd-watch, #related.ytd-watch, #transcript.ytd-watch {
+    margin-left: 10px !important;
+}
+ytd-watch-next-secondary-results-renderer {
+    background-color: var(--transparency);
+    padding: 10px;
+    border-radius: var(--roundness)
 }
 
 /*Menus*/
