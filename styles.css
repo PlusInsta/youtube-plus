@@ -36,8 +36,18 @@ html {
 	--yt-channel-header-background: transparent;
 }
 
+/*Header*/
 #masthead {
     --yt-swatch-primary: transparent !important;
+}
+/*Search bar*/
+#search-icon-legacy.ytd-searchbox {
+    border-radius: var(--roundness) !important;
+    border: none;
+    margin-left: 10px;
+}
+ytd-searchbox[mode=legacy] #container.ytd-searchbox, ytd-searchbox[mode=legacy-centered] #container.ytd-searchbox {
+    border: none !important;
 }
 
 /*Homepage*/
@@ -47,24 +57,16 @@ ytd-two-column-browse-results-renderer.ytd-browse {
     padding: 20px;
     padding-top: 0px;
 }
-
-/*Remove ad space*/
-ytd-video-masthead-ad-renderer {
-    display: none;
+/*Ads*/
+.ytvmh-embed-0 {
+    background-color: transparent !important;
 }
-
+#ad-iframe {
+    padding: 20px;
+    border-radius: var(--roundness);
+}
+iframe { border-radius: var(--roundness); }
 /*Roundness*/
 #thumbnail, yt-img-shadow, paper-button, #container.ytd-searchbox {
     border-radius: var(--roundness) !important;
-}
-
-/*Search bar*/
-#search-icon-legacy.ytd-searchbox {
-    border-radius: var(--roundness) !important;
-    border: none;
-    margin-left: 10px;
-}
-
-ytd-searchbox[mode=legacy] #container.ytd-searchbox, ytd-searchbox[mode=legacy-centered] #container.ytd-searchbox {
-    border: none !important;
 }
