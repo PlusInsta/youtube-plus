@@ -85,6 +85,9 @@ ytd-two-column-browse-results-renderer.ytd-browse {
 .html5-video-player:not(.ytp-transparent), .html5-video-player.unstarted-mode, .html5-video-player.ad-interrupting, .html5-video-player.ended-mode, .html5-video-player.ytp-fullscreen {
     background: transparent;
 }
+ytd-watch:not([transparent-player-background_]) #player-container.ytd-watch, ytd-watch[flexy-fit-to-video_]:not([is-currently-flexible_]) #player-container.ytd-watch, ytd-watch[theater] #player-container.ytd-watch {
+    background-color: var(--transparency-darker);
+}
 #player, #player-container, .html5-video-container, .html5-main-video, .ytp-chrome-controls {
     border-radius: var(--roundness) !important;
 }
