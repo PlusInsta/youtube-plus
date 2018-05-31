@@ -194,6 +194,59 @@ ytd-button-renderer[is-paper-button], paper-button, paper-button.ytd-subscribe-b
 body {
 	background: var(--background);
 }
+body #footer-container {
+	background-color: transparent;
+	border-top: none;
+}
+#yt-masthead-container {
+	background: var(--transparency);
+	border-bottom: none;
+}
+#yt-masthead #logo-container span.content-region {
+	display: none;
+}
+#appbar-guide-menu, .guide-flyout {
+	background: var(--transparency);
+}
+.yt-card {
+	background: var(--transparency);
+	border-radius: var(--roundness);
+}
+#footer-main {
+	border-bottom: none;
+}
+#footer-logo, .logo {
+	filter: invert(1) hue-rotate(180deg) saturate(10);
+}
+.yt-uix-button-icon-wrapper {
+	filter: invert(1);
+}
+#footer-links-primary a,
+#upload-button-text,
+.upload-other-options-list .upload-option-text,
+.upload-other-options-list .upload-option-deprecation-warning {
+	color: #ccc;
+}
+.guide-item,
+.upload-sidebar-header,
+#loading-message, #upload-hub-privacy-settings,
+.upload-informational-footer, #upload-drag-drop-description {
+	color: #bbb;
+}
+.yt-uix-button-default>not(#start-upload-button-single), .yt-uix-button-default[disabled], .yt-uix-button-default[disabled]:hover, .yt-uix-button-default[disabled]:active, .yt-uix-button-default[disabled]:focus {
+	border-color: transparent !important;
+	background: var(--transparency) !important;
+	border-radius: var(--roundness);
+	color: #ddd;
+}
+.yt-uix-button-menu {
+	border-color: transparent;
+	background: var(--transparency-dark);
+	border-radius: var(--roundness)
+}
+.yt-uix-button-menu .yt-uix-button-menu-item {
+	color: #ddd;
+}
 
 /*YouTube Light theme*/
 html:not([style-scope]):not(.style-scope) {
