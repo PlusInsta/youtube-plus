@@ -112,8 +112,12 @@ ytd-video-secondary-info-renderer,
 }
 #info, #comments { margin-top: 10px !important; }
 #related { margin-top: -10px !important; }
-ytd-watch {
-    background: var(--yt-main-app-background-tmp);
+ytd-watch[theater] #related,
+ytd-watch[theater] #chat,
+ytd-watch[theater] #playlist,
+ytd-watch[theater] #transcript {
+    margin-top: 10px !important;
+    margin-left: 0px !important;
 }
 ytd-watch[theater] #pla-shelf.ytd-watch > *.ytd-watch, ytd-watch[theater] #info.ytd-watch > *.ytd-watch, ytd-watch[theater] #meta.ytd-watch > *.ytd-watch, ytd-watch[theater] #ticket-shelf.ytd-watch > *.ytd-watch, ytd-watch[theater] #clarify-box.ytd-watch > *.ytd-watch, ytd-watch[theater] #comments.ytd-watch > *.ytd-watch { margin-right: 0px !important; }
 /*Comments*/
