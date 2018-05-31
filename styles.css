@@ -105,15 +105,15 @@ ytd-watch:not([transparent-player-background_]) #player-container.ytd-watch, ytd
 	display: none
 }
 .ytp-chrome-bottom {
-	background: var(--transparency);
-	border-radius: var(--roundness);
+  background: var(--transparency);
+  border-radius: var(--roundness);
 }
 .ytp-progress-bar {
-	margin-bottom: -1px;
-	border-radius: var(--roundness) var(--roundness) 0 0;
+  margin-bottom: -1px;
+  border-radius: var(--roundness) var(--roundness) 0 0;
 }
 .ytp-ad-progress, .ytp-play-progress {
-	border-radius: 10px;
+  border-radius: 10px;
 }
 ytd-video-primary-info-renderer, ytd-video-secondary-info-renderer, #placeholder-area.ytd-comment-simplebox-renderer {
 	border-bottom: none;
@@ -169,6 +169,33 @@ ytd-watch-next-secondary-results-renderer {
 	background-color: var(--transparency);
 	padding: 10px;
 	border-radius: var(--roundness)
+}
+
+/*Playlists*/
+.header.ytd-playlist-panel-renderer,
+.playlist-items.ytd-playlist-panel-renderer {
+    background-color: var(--transparency);
+}
+.header.ytd-playlist-panel-renderer {
+  border-radius: var(--roundness) var(--roundness) 0 0;
+}
+.playlist-items.ytd-playlist-panel-renderer {
+  border-radius: 0 0 var(--roundness) var(--roundness);
+}
+@media (min-width: 1000px) {
+ytd-watch:not([flexy-fit-to-video_]) #playlist.ytd-watch {
+    margin-bottom: 20px;
+    margin-top: -10px;
+    margin-right: -24px;
+}
+}
+@media (min-width: 1000px) {
+#playlist.ytd-watch {
+  width: 40% !important;
+}
+#container.ytd-playlist-panel-renderer {
+    max-width: 403px !important;
+}
 }
 
 /*Channels*/
