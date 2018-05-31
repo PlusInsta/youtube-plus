@@ -6,7 +6,7 @@ ytd-app {
 	background-attachment: fixed !important;
 }
 /*Font*/
-html, textarea, #placeholder {
+html, textarea, paper-button, #placeholder {
 	font-family: var(--font) !important;
 }
 
