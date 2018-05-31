@@ -1,194 +1,207 @@
-@import url(https://fonts.googleapis.com/css?family=Product+Sans:300,400,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Product+Sans:400,500);
+
 /*Background*/
 ytd-app {
 	background: var(--background) !important;
-	background-size: cover !important;
-	background-attachment: fixed !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
 }
+
 /*Font*/
 html, textarea, paper-button, #placeholder {
-	font-family: var(--font) !important;
+  font-family: var(--font) !important;
 }
 
 /*iframes*/
-iframe { border-radius: var(--roundness); }
+iframe {
+  border-radius: var(--roundness);
+}
 #ad-iframe {
-    padding: 20px;
-    border-radius: var(--roundness);
-    background-color: var(--transparency);
-    margin-bottom: 20px;
+  padding: 20px;
+  border-radius: var(--roundness);
+  background-color: var(--transparency);
+  margin-bottom: 20px;
 }
 
 /*Theme variables*/
 :root {
-	--font: 'Product Sans';
-	--background: url(https://i.imgur.com/3AiL3yN.png);
-	--roundness: 10px;
-	--transparency: rgba(0,0,0,0.6);
-	--transparency-dark: rgba(0,0,0,0.7);
-	--transparency-darker: rgba(0,0,0,0.8);
-	--transparency-darkest: rgba(0,0,0,0.9);
-	--transparency-lite: rgba(255,255,255,0.6);
-	--transparency-light: rgba(255,255,255,0.7);
-	--transparency-lighter: rgba(255,255,255,0.8);
-	--transparency-lightest: rgba(255,255,255,0.9);
+  --font:'Product Sans';
+  --background: url(https://i.imgur.com/3AiL3yN.png);
+  --roundness: 10px;
+  --transparency: rgba(0, 0, 0, 0.6);
+  --transparency-dark: rgba(0, 0, 0, 0.7);
+  --transparency-darker: rgba(0, 0, 0, 0.8);
+  --transparency-darkest: rgba(0, 0, 0, 0.9);
+  --transparency-lite: rgba(255, 255, 255, 0.6);
+  --transparency-light: rgba(255, 255, 255, 0.7);
+  --transparency-lighter: rgba(255, 255, 255, 0.8);
+  --transparency-lightest: rgba(255, 255, 255, 0.9);
 }
+
 /*YouTube's Variables*/
 :root {
-	--yt-app-background: transparent !important;
-	--yt-main-app-background: transparent !important;
-    --yt-main-app-background-tmp: transparent !important;
-	--yt-guide-background: transparent !important;
-	--yt-sidebar-background: transparent !important;
-	--yt-dialog-background: transparent;
-	--yt-searchbox-background: transparent;
-	--yt-channel-header-background: transparent;
+  --yt-app-background: transparent !important;
+  --yt-main-app-background: transparent !important;
+  --yt-main-app-background-tmp: transparent !important;
+  --yt-guide-background: transparent !important;
+  --yt-sidebar-background: transparent !important;
+  --yt-dialog-background: transparent;
+  --yt-searchbox-background: transparent;
+  --yt-channel-header-background: transparent;
 }
 
 /*Header*/
 #masthead {
-    --yt-swatch-primary: transparent !important;
+  --yt-swatch-primary: transparent !important;
 }
 #country-code.ytd-topbar-logo-renderer {
-	display: none;
+  display: none;
 }
 
 /*Search bar*/
 #search-icon-legacy.ytd-searchbox {
-    border-radius: var(--roundness) !important;
-    border: none;
-    margin-left: 10px;
+  border-radius: var(--roundness) !important;
+  border: none;
+  margin-left: 10px;
 }
-ytd-searchbox[mode=legacy] #container.ytd-searchbox, ytd-searchbox[mode=legacy-centered] #container.ytd-searchbox {
-    border: none !important;
+ytd-searchbox[mode=legacy] #container.ytd-searchbox,
+ytd-searchbox[mode=legacy-centered] #container.ytd-searchbox {
+  border: none !important;
 }
 
 /*Sidebar menu*/
 #sections, #footer {
-    margin-right: 10px;
-    background-color: var(--transparency);
-    border-radius: var(--roundness);
+  margin-right: 10px;
+  background-color: var(--transparency);
+  border-radius: var(--roundness);
 }
 
 /*Homepage*/
 ytd-two-column-browse-results-renderer.ytd-browse {
-    background: var(--transparency);
-    border-radius: var(--roundness);
-    padding: 20px;
-    padding-top: 0;
+  background: var(--transparency);
+  border-radius: var(--roundness);
+  padding: 20px;
+  padding-top: 0;
 }
 #thumbnail, yt-img-shadow, #container.ytd-searchbox {
-    border-radius: var(--roundness) !important;
+  border-radius: var(--roundness) !important;
 }
 
 /*Videos*/
 .html5-video-player:not(.ytp-transparent), .html5-video-player.unstarted-mode, .html5-video-player.ad-interrupting, .html5-video-player.ended-mode, .html5-video-player.ytp-fullscreen {
-    background: transparent;
+  background: transparent;
 }
 ytd-watch:not([transparent-player-background_]) #player-container.ytd-watch, ytd-watch[flexy-fit-to-video_]:not([is-currently-flexible_]) #player-container.ytd-watch, ytd-watch[theater] #player-container.ytd-watch {
-    background-color: var(--transparency-darker);
+  background-color: var(--transparency-darker);
 }
 #player, #player-container, .html5-video-container, .html5-main-video, .ytp-chrome-controls {
-    border-radius: var(--roundness) !important;
+  border-radius: var(--roundness) !important;
 }
-#player { margin-bottom: 10px; }
-.ytp-gradient-bottom { display: none }
-ytd-video-primary-info-renderer,
-ytd-video-secondary-info-renderer,
-#placeholder-area.ytd-comment-simplebox-renderer {
-    border-bottom: none;
+#player {
+  margin-bottom: 10px;
+}
+.ytp-gradient-bottom {
+  display: none
+}
+ytd-video-primary-info-renderer, ytd-video-secondary-info-renderer, #placeholder-area.ytd-comment-simplebox-renderer {
+  border-bottom: none;
 }
 #info-contents {
-    background-color: var(--transparency);
-    border-radius: var(--roundness) var(--roundness) 0 0;
-    padding: 10px;
-    padding-top: 0;
+  background-color: var(--transparency);
+  border-radius: var(--roundness) var(--roundness) 0 0;
+  padding: 10px;
+  padding-top: 0;
 }
 #meta-contents {
-    border-radius: 0 0 var(--roundness) var(--roundness);
-    background-color: var(--transparency);
-    padding: 10px;
-    padding-top: 0;
+  border-radius: 0 0 var(--roundness) var(--roundness);
+  background-color: var(--transparency);
+  padding: 10px;
+  padding-top: 0;
 }
-#info, #comments { margin-top: 10px !important; }
-#related { margin-top: -10px !important; }
-ytd-watch[theater] #related,
-ytd-watch[theater] #chat,
-ytd-watch[theater] #playlist,
-ytd-watch[theater] #transcript {
-    margin-top: 10px !important;
-    margin-left: 0px !important;
+#info, #comments {
+  margin-top: 10px;
 }
-ytd-watch[theater] #pla-shelf.ytd-watch > *.ytd-watch, ytd-watch[theater] #info.ytd-watch > *.ytd-watch, ytd-watch[theater] #meta.ytd-watch > *.ytd-watch, ytd-watch[theater] #ticket-shelf.ytd-watch > *.ytd-watch, ytd-watch[theater] #clarify-box.ytd-watch > *.ytd-watch, ytd-watch[theater] #comments.ytd-watch > *.ytd-watch { margin-right: 0px !important; }
+ytd-watch[theater] #pla-shelf.ytd-watch > *.ytd-watch, ytd-watch[theater] #info.ytd-watch > *.ytd-watch, ytd-watch[theater] #meta.ytd-watch > *.ytd-watch, ytd-watch[theater] #ticket-shelf.ytd-watch > *.ytd-watch, ytd-watch[theater] #clarify-box.ytd-watch > *.ytd-watch, ytd-watch[theater] #comments.ytd-watch > *.ytd-watch {
+  margin-right: 0px;
+}
+
 /*Comments*/
 .ytd-comments {
-    background-color: var(--transparency) !important;
-    padding: 2px 10px;
-    margin-right: 0 !important;
+  background-color: var(--transparency) !important;
+  padding: 2px 10px;
+  margin-right: 0 !important;
 }
 ytd-comment-renderer {
-    margin-top: 10px;
+  margin-top: 10px;
 }
-.ytd-comments #header { margin-top: -10px; }
+.ytd-comments #header {
+  margin-top: -10px;
+}
+
 /*Related videos*/
-#chat.ytd-watch, #playlist.ytd-watch, #related.ytd-watch, #transcript.ytd-watch {
-    margin-left: 10px !important;
+#related {
+  margin-top: -10px;
+}
+@media (max-width: 999px) {
+ #related {
+  margin-top: 10px;
+}
+}
+@media (max-width: 999px) {
+ytd-watch[theater] #related, ytd-watch[theater] #chat, ytd-watch[theater] #playlist, ytd-watch[theater] #transcript {
+  margin-top: 10px !important;
+  margin-left: 0px;
+}
 }
 ytd-watch-next-secondary-results-renderer {
-    background-color: var(--transparency);
-    padding: 10px;
-    border-radius: var(--roundness)
+  background-color: var(--transparency);
+  padding: 10px;
+  border-radius: var(--roundness)
 }
 
 /*Channels*/
 ytd-c4-tabbed-header-renderer {
-    --yt-lightsource-section1-color: var(--transparency-dark);
-    margin: 10px;
+  --yt-lightsource-section1-color: var(--transparency-dark);
+  margin: 10px;
 }
 #primary-links.ytd-c4-tabbed-header-renderer, #secondary-links.ytd-c4-tabbed-header-renderer {
-    margin: 0 0 0 4px;
-    border-radius: var(--roundness);
+  margin: 0 0 0 4px;
+  border-radius: var(--roundness);
 }
 #links-holder {
-	margin-top: 150px;
-    margin-right: 40px;
+  margin-top: 150px;
+  margin-right: 40px;
 }
 ytd-c4-tabbed-header-renderer[has-channel-art] .banner-visible-area.ytd-c4-tabbed-header-renderer {
-    height: 100% !important;
-}
-#wrapper#header#contentContainer {
-    margin-top: 40px !important;
+  height: 100% !important;
 }
 #background {
-    filter: blur(.15em);
-    margin: .05em;
+  filter: blur(.15em);
+  margin: .05em;
 }
 
 /*Menus*/
 ytd-multi-page-menu-renderer {
-	border-radius: var(--roundness) !important;
+  border-radius: var(--roundness) !important;
 }
 
 /*Buttons*/
-ytd-button-renderer[is-paper-button],
-paper-button,
-paper-button.ytd-subscribe-button-renderer,
-paper-button[subscribed].ytd-subscribe-button-renderer,
-#cancel-button.ytd-commentbox,
-#submit-button.ytd-commentbox {
-    border-radius: var(--roundness);
+ytd-button-renderer[is-paper-button], paper-button, paper-button.ytd-subscribe-button-renderer, paper-button[subscribed].ytd-subscribe-button-renderer, #cancel-button.ytd-commentbox, #submit-button.ytd-commentbox {
+  border-radius: var(--roundness);
 }
 
 /*YouTube Legacy / Material Design*/
-body { background: var(--background); }
+body {
+  background: var(--background);
+}
 
 /*YouTube Light theme*/
 html:not([style-scope]):not(.style-scope) {
-    --yt-primary-color: white;
-    --yt-primary-text-color: white;
-    --yt-hovered-text-color: hsl(0, 0%, 100%);
-    --yt-secondary-text-color: hsl(0,0%,100%);
-    --yt-tertiary-text-color: hsl(0,0%,100%);
-    --yt-disabled-text-color: grey;
-    --yt-placeholder-text-color: white;
+  --yt-primary-color: white;
+  --yt-primary-text-color: white;
+  --yt-hovered-text-color: hsl(0, 0%, 100%);
+  --yt-secondary-text-color: hsl(0, 0%, 100%);
+  --yt-tertiary-text-color: hsl(0, 0%, 100%);
+  --yt-disabled-text-color: grey;
+  --yt-placeholder-text-color: white;
 }
