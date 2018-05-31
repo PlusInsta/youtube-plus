@@ -104,6 +104,17 @@ ytd-watch:not([transparent-player-background_]) #player-container.ytd-watch, ytd
 .ytp-gradient-bottom {
 	display: none
 }
+.ytp-chrome-bottom {
+	background: var(--transparency);
+	border-radius: var(--roundness);
+}
+.ytp-progress-bar {
+	margin-bottom: -1px;
+	border-radius: var(--roundness) var(--roundness) 0 0;
+}
+.ytp-ad-progress, .ytp-play-progress {
+	border-radius: 10px;
+}
 ytd-video-primary-info-renderer, ytd-video-secondary-info-renderer, #placeholder-area.ytd-comment-simplebox-renderer {
 	border-bottom: none;
 }
