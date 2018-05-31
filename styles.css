@@ -119,6 +119,9 @@ ytd-watch[theater] #pla-shelf.ytd-watch > *.ytd-watch, ytd-watch[theater] #info.
     padding: 2px 10px;
     margin-right: 0 !important;
 }
+ytd-comment-renderer {
+    margin-top: 10px;
+}
 .ytd-comments #header { margin-top: -10px; }
 /*Related videos*/
 #chat.ytd-watch, #playlist.ytd-watch, #related.ytd-watch, #transcript.ytd-watch {
