@@ -245,7 +245,9 @@ ytd-button-renderer[is-paper-button], paper-button, paper-button.ytd-subscribe-b
 .ytcp-video-row-0 #row-container.ytcp-video-row .floating-column.ytcp-video-row,
 .ytcp-video-list-0 #footer-container.ytcp-video-list,
 .ytcp-navigation-drawer-0 #main-menu.ytcp-navigation-drawer paper-icon-item.iron-selected.ytcp-navigation-drawer:not(.bottom-section-entry),
-.ytcp-navigation-drawer-0 #main-menu.ytcp-navigation-drawer paper-icon-item.iron-selected.ytcp-navigation-drawer:not(.bottom-section-entry) iron-icon.ytcp-navigation-drawer {
+.ytcp-navigation-drawer-0 #main-menu.ytcp-navigation-drawer paper-icon-item.iron-selected.ytcp-navigation-drawer:not(.bottom-section-entry) iron-icon.ytcp-navigation-drawer,
+/*Comments page*/
+.ytcp-sticky-wrapper-0 {
   background-color: var(--transparency);
 }
 /*Highlighted backgrounds*/
@@ -305,6 +307,9 @@ ytd-button-renderer[is-paper-button], paper-button, paper-button.ytd-subscribe-b
 .ytcp-comment-0 #name.ytcp-comment,
 .ytcp-comment-0 #reply-endpoint.ytcp-comment,
 .ytcp-comment-action-buttons-0 #vote-count.ytcp-comment-action-buttons,
+.ytcp-comment-video-thumbnail-0 #video-title.ytcp-comment-video-thumbnail,
+.paper-tab-0:not(.iron-selected) > .tab-content.paper-tab,
+.ytcp-comment-button-2 #button.ytcp-comment-button,
 /*Icon colors*/
 .ytcp-navigation-drawer-0 #main-menu.ytcp-navigation-drawer paper-icon-item.iron-selected.ytcp-navigation-drawer:not(.bottom-section-entry), .ytcp-navigation-drawer-0 #main-menu.ytcp-navigation-drawer paper-icon-item.iron-selected.ytcp-navigation-drawer:not(.bottom-section-entry) iron-icon.ytcp-navigation-drawer {
     color: white;
@@ -335,6 +340,14 @@ ytd-button-renderer[is-paper-button], paper-button, paper-button.ytd-subscribe-b
 /*Greyed out*/
 .paper-icon-button-0[disabled] {
   color: #444 !important;
+}
+/* Section: Miscellaneous */
+/*Checkboxes*/
+.paper-checkbox-1 #checkbox.paper-checkbox,
+.paper-checkbox-2 #checkbox.paper-checkbox,
+.paper-checkbox-3 #checkbox.paper-checkbox {
+  border-radius: var(--roundness);
+  border-color: var(--accent-color);
 }
 /*End of YouTube Studio*/
 
