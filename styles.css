@@ -261,8 +261,13 @@ body #footer-container {
 }
 .yt-uix-button .yt-uix-button-icon,
 .yt-uix-button .yt-uix-button-arrow,
-.selected a span {
+.vm-video-metric-icon,
+li a span {
 	filter: invert(1);
+}
+.yt-uix-button-default.yt-uix-button-toggled,
+.yt-uix-button-default.yt-uix-button-toggled:hover {
+  box-shadow: none;
 }
 p,
 h4,
@@ -296,6 +301,8 @@ label,
 .creator-editor-nav-tabs li>span,
 .creator-editor-nav-tabs li a,
 .creator-editor-content .creator-editor-title,
+.vm-list-view .vm-video-title .vm-video-title-content,
+.vm-list-view .vm-video-side-view-count a,
 .yt-default h1,
 .yt-default h2,
 .yt-default h3,
@@ -310,6 +317,17 @@ h5.yt,
 h6.yt {
 	color: #ddd;
 }
+.yt-badge {
+    border: 1px solid var(--accent-color);
+    border-radius: var(--roundness);
+    color: #ccc;
+}
+.vm-list-view .yt-badge.vm-video-privacy-draft-badge,
+.vm-list-view .yt-badge.vm-video-scheduled-badge {
+  background-color: var(--transparency);
+  border-radius: var(--roundness);
+  color: #ddd;
+}
 #footer .yt-uix-button-group .yt-uix-button,
 .yt-uix-button,
 .yt-uix-button-default:not(#start-upload-button-single),
@@ -322,7 +340,11 @@ h6.yt {
 	border-color: transparent !important;
 	color: #ddd;
 }
-#sb-button-notify, #yt-masthead-notifications-button, #upload-btn {
+#sb-button-notify,
+#yt-masthead-notifications-button,
+#upload-btn,
+#advanced-search-button,
+#vm-myvideos-search-btn {
   background: none !important;
 }
 .yt-uix-form-input-select, .yt-uix-form-input-text, .yt-uix-form-input-textarea {
@@ -378,8 +400,15 @@ yt-uix-form-input-radio-element,
 /*YouTube Studio*/
 #creator-editor-container,
 #inline-editor-main,
-.timedtext-content {
+.timedtext-content,
+#non-appbar-vm-video-actions-bar,
+.vm-list-view .vm-video-list .vm-video-item,
+#vm-pagination,
+#masthead-appbar {
   background-color: var(--transparency);
+}
+#masthead-appbar {
+  border-bottom: none;
 }
 
 /*YouTube Light theme*/
