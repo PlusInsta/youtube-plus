@@ -308,10 +308,16 @@ ytd-button-renderer[is-paper-button], paper-button, paper-button.ytd-subscribe-b
 .ytcp-comment-0 #reply-endpoint.ytcp-comment,
 .ytcp-comment-action-buttons-0 #vote-count.ytcp-comment-action-buttons,
 .ytcp-comment-video-thumbnail-0 #video-title.ytcp-comment-video-thumbnail,
+.ytcp-comments-section-0 #comments-section-message.ytcp-comments-section,
 .paper-tab-0:not(.iron-selected) > .tab-content.paper-tab,
 .ytcp-comment-button-2 #button.ytcp-comment-button,
 /*Icon colors*/
-.ytcp-navigation-drawer-0 #main-menu.ytcp-navigation-drawer paper-icon-item.iron-selected.ytcp-navigation-drawer:not(.bottom-section-entry), .ytcp-navigation-drawer-0 #main-menu.ytcp-navigation-drawer paper-icon-item.iron-selected.ytcp-navigation-drawer:not(.bottom-section-entry) iron-icon.ytcp-navigation-drawer {
+.ytcp-navigation-drawer-0 #main-menu.ytcp-navigation-drawer paper-icon-item.iron-selected.ytcp-navigation-drawer:not(.bottom-section-entry),
+.ytcp-navigation-drawer-0 #main-menu.ytcp-navigation-drawer paper-icon-item.iron-selected.ytcp-navigation-drawer:not(.bottom-section-entry) iron-icon.ytcp-navigation-drawer,
+.ytcp-navigation-drawer-0 .menu-item-link.ytcp-navigation-drawer:hover paper-icon-item.ytcp-navigation-drawer iron-icon.ytcp-navigation-drawer,
+.ytcp-navigation-drawer-0 #main-menu.ytcp-navigation-drawer paper-icon-item.bottom-section-entry.ytcp-navigation-drawer:hover iron-icon.ytcp-navigation-drawer,
+.ytcp-navigation-drawer-0 #main-menu.ytcp-navigation-drawer paper-icon-item.bottom-section-entry.ytcp-navigation-drawer:focus iron-icon.ytcp-navigation-drawer,
+.ytcp-navigation-drawer-0 #main-menu.ytcp-navigation-drawer paper-icon-item.bottom-section-entry[submenu-open].ytcp-navigation-drawer iron-icon.ytcp-navigation-drawer {
     color: white;
 }
 /*Darker icons*/
