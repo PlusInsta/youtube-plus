@@ -110,7 +110,7 @@ ytd-watch:not([transparent-player-background_]) #player-container.ytd-watch, ytd
 .ytp-chrome-top {
 	background: var(--transparency);
 	border-radius: var(--roundness);
-	top: -12px !important;
+	top: -4px !important;
 	transition: .25s cubic-bezier(0.0,0.0,0.2,1);
 }
 .ytp-autohide .ytp-chrome-top {
