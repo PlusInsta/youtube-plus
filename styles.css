@@ -102,7 +102,20 @@ ytd-watch:not([transparent-player-background_]) #player-container.ytd-watch, ytd
 	margin-bottom: 10px;
 }
 .ytp-gradient-bottom {
-	display: none
+	display: none;
+}
+.ytp-gradient-top {
+	display: none;
+}
+.ytp-chrome-top {
+	background: var(--transparency);
+	border-radius: var(--roundness);
+	top: -12px !important;
+	transition: .25s cubic-bezier(0.0,0.0,0.2,1);
+}
+.ytp-autohide .ytp-chrome-top {
+	transition: .25s;
+	opacity: 0;
 }
 .ytp-chrome-bottom {
 	background: var(--transparency);
