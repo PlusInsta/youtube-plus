@@ -562,11 +562,28 @@ yt-uix-form-input-radio-element,
 
 /*YouTube Light theme*/
 html:not([style-scope]):not(.style-scope) {
-	--yt-primary-color: white;
-	--yt-primary-text-color: white;
+	--yt-primary-color: hsl(0, 0%, 80%);
+	--yt-primary-text-color: hsl(0, 0%, 85%);
 	--yt-hovered-text-color: hsl(0, 0%, 100%);
 	--yt-secondary-text-color: hsl(0, 0%, 100%);
 	--yt-tertiary-text-color: hsl(0, 0%, 100%);
+	--yt-expand-color: hsl(0, 0%, 66%);
+	--ytd-comment-text-color: hsl(0, 0%, 80%);
+	--yt-channel-owner: hsl(0, 0%, 85%);
+	--ytd-badge-icon-color: hsl(0, 0%, 85%);
+	--ytd-video-publish-date-color: hsl(0, 0%, 60%);
+	--yt-metadata-color: hsla(0,0%,50%, 1);
 	--yt-disabled-text-color: grey;
 	--yt-placeholder-text-color: white;
+	--yt-simple-menu-header-background: hsla(0, 0%, 21%);
+	--yt-dialog-background: black;
+}
+yt-next-continuation.ytd-watch-next-secondary-results-renderer {
+		--paper-button_-_background-color: var(--transparency);
+}
+a.yt-simple-endpoint.yt-formatted-string {
+	color: #0099FF;
+}
+a.yt-simple-endpoint.yt-formatted-string:visited {
+	color: #0066FF;
 }
