@@ -241,6 +241,7 @@ ytd-multi-page-menu-renderer {
 }
 #contentWrapper .dropdown-content #container #sections {
 	margin-right: 0;
+  border-radius: 0;
 }
 
 /*Buttons*/
