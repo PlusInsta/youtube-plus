@@ -117,6 +117,9 @@ ytd-watch:not([transparent-player-background_]) #player-container.ytd-watch, ytd
 	transition: .25s;
 	opacity: 0;
 }
+.ytp-hide-info-bar .ytp-chrome-top {
+	top: 0 !important;
+}
 .ytp-chrome-bottom {
 	background: var(--transparency);
 	border-radius: var(--roundness);
