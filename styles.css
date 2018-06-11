@@ -239,6 +239,9 @@ ytd-c4-tabbed-header-renderer[has-channel-art] .banner-visible-area.ytd-c4-tabbe
 ytd-multi-page-menu-renderer {
 	border-radius: var(--roundness) !important;
 }
+#contentWrapper .dropdown-content #container #sections {
+	margin-right: 0;
+}
 
 /*Buttons*/
 ytd-button-renderer[is-paper-button], paper-button, paper-button.ytd-subscribe-button-renderer, paper-button[subscribed].ytd-subscribe-button-renderer, #cancel-button.ytd-commentbox, #submit-button.ytd-commentbox {
