@@ -154,6 +154,7 @@ ytd-video-primary-info-renderer, ytd-video-secondary-info-renderer, #placeholder
 	margin-top: 10px;
 }
 #show-hide-button.ytd-live-chat-frame > ytd-toggle-button-renderer.ytd-live-chat-frame {
+	background-color: var(--transparency);
 	border-radius: var(--roundness);
   margin-top: 5px;
 }
@@ -172,6 +173,13 @@ ytd-comment-renderer {
 }
 .ytd-comments #header {
 	margin-top: -10px;
+}
+
+/*Chat*/
+[dark]:not([style-scope]):not(.style-scope) *:not([style-scope]):not(.style-scope) {
+	--yt-live-chat-background-color: var(--transparency);
+	--yt-live-chat-action-panel-background-color: var(--transparency);
+	--yt-live-chat-action-panel-background-color-transparent: var(--transparency);
 }
 
 /*Related videos*/
