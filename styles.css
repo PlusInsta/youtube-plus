@@ -126,7 +126,7 @@ ytd-watch:not([transparent-player-background_]) #player-container.ytd-watch, ytd
 }
 .ytp-chrome-bottom {
 	background: var(--transparency);
-	border-radius: var(--roundness);
+	border-radius: var(--roundness) var(--roundness) 0 0;
 }
 .ytp-progress-bar {
 	margin-bottom: -1px;
