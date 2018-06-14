@@ -153,6 +153,10 @@ ytd-video-primary-info-renderer, ytd-video-secondary-info-renderer, #placeholder
 #info, #comments {
 	margin-top: 10px;
 }
+#show-hide-button.ytd-live-chat-frame > ytd-toggle-button-renderer.ytd-live-chat-frame {
+	border-radius: var(--roundness);
+  margin-top: 5px;
+}
 ytd-watch[theater] #pla-shelf.ytd-watch > *.ytd-watch, ytd-watch[theater] #info.ytd-watch > *.ytd-watch, ytd-watch[theater] #meta.ytd-watch > *.ytd-watch, ytd-watch[theater] #ticket-shelf.ytd-watch > *.ytd-watch, ytd-watch[theater] #clarify-box.ytd-watch > *.ytd-watch, ytd-watch[theater] #comments.ytd-watch > *.ytd-watch {
 	margin-right: 0px;
 }
@@ -171,7 +175,7 @@ ytd-comment-renderer {
 }
 
 /*Related videos*/
-#related {
+#related, #chat {
 	margin-top: -10px;
 }
 @media (max-width: 999px) {
