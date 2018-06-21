@@ -117,6 +117,9 @@ ytd-watch:not([transparent-player-background_]) #player-container.ytd-watch, ytd
 	padding-top: 20px;
 	font-size: 26px;
 }
+.ytp-title-channel {
+  margin-left: 0 !important;
+}
 .ytp-autohide .ytp-chrome-top {
 	transition: .25s;
 	opacity: 0;
