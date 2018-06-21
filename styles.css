@@ -190,9 +190,19 @@ ytd-comment-renderer {
 	margin-top: -10px;
 }
 @media (max-width: 999px) {
- #related {
+ #related, #playlist {
 	margin-top: 10px;
 }
+}
+@media (min-width: 1000px) {
+ytd-watch:not([flexy-fit-to-video_]) #playlist.ytd-watch {
+	margin-top: -10px;
+	margin-bottom: 20px;
+}
+}
+ytd-watch[theater] #playlist.ytd-watch {
+	margin-top: 0 !important;
+	margin-bottom: 10px !important;
 }
 @media (max-width: 999px) {
 ytd-watch[theater] #related, ytd-watch[theater] #chat, ytd-watch[theater] #playlist, ytd-watch[theater] #transcript {
