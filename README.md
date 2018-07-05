@@ -7,18 +7,20 @@ This theme is in its early stages. Expect lots of bugs, inconsistencies, frequen
 Because of this, the theme's main installation method uses @import to always be up-to-date with this repository.
 
 # Installation
-The steps are the same for all browsers, as long as you're using Stylish.
-## Stylish for Chrome and Chromium-based Browsers
-[Stylish on the Google Chrome Web Store](https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe).
-## Stylish for Firefox
-[Stylish on Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/stylish/)
-## Stylish for Opera
-[Stylish on Opera Add-ons](https://addons.opera.com/en/extensions/details/stylish/)
-## (Unofficial) Stylish for Safari
+The steps should be the same for all browsers, as long as you're using Stylus.
+## Stylus for Chrome and Chromium-based Browsers
+[Stylus on the Google Chrome Web Store](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne).
+## Stylus for Firefox
+[Stylus on Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
+## Stylus for Opera
+[Stylus on Opera Add-ons](https://addons.opera.com/en/extensions/details/stylus/)
+
+If you're on a Mac and love Safari, someone wrote a similar extension for it. It works just like Stylus, so you can use it for this theme.
+## Stylish for Safari
 [Stylish at Safari Extensions](https://safari-extensions.apple.com/details/?id=com.sobolev.stylish-5555L95H45)
 
 # Installation steps:
-- Click the Stylish icon in your browser's navigation bar
+- Click the Stylus icon in your browser's navigation bar
 - Click the three dots in the popup
 - Click "Create New Style"
 - Paste this:
