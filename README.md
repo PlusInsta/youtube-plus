@@ -21,8 +21,8 @@ If you're on a Mac and love Safari, someone wrote a similar extension for it. It
 
 # Installation steps:
 - Click the Stylus icon in your browser's navigation bar
-- Click the three dots in the popup
-- Click "Create New Style"
+- Click Manage
+- Click "Write new style"
 - Paste this:
 ```
 @import url(https://rawgit.com/PlusInsta/youtube-plus/master/styles.css);
@@ -35,7 +35,7 @@ If you're on a Mac and love Safari, someone wrote a similar extension for it. It
 _Note: This doesn't actually block ads. It only prevents empty spaces from appearing if you're using tracking blockers._
 - Click "Specify" at the bottom of the page
 - Select "URLs on the domain"
-- Enter `youtube.com`
+- Type `youtube.com`
 - Give the theme a name
 - Save
 
