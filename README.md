@@ -29,7 +29,7 @@ If you're on a Mac and love Safari, someone wrote a similar extension for it. It
 ```
 - If you have Ghostery or another tracking blocker, add this to avoid blank spaces:
 ```
-#ad-iframe { display: none };
+#ad-iframe { display: none }
 #player-ads { display: none }
 ```
 _Note: This doesn't actually block ads. It only prevents empty spaces from appearing if you're using tracking blockers._
@@ -53,4 +53,3 @@ Videos
 Channels
 
 ![Channel Example Screenshot](https://dl.dropboxusercontent.com/s/ivxm12o6gqkbhp6/ChannelSS.png)
-_Note: I picked PewDiePie simply because his channel makes use of all the YouTube features. I do not support his content._
